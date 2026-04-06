@@ -1,0 +1,48 @@
+1. Start by reviewing the data.gov home page. What is this?
+Data.gov is U.S.A. Government's open data site. It is an open data source. You can find data, tools and resources to conduct research in this website.
+
+2. Go to Most Viewed Datasets. How many datasets are listed?
+There are 403.358 data sets found as 4/6/2026. 20 of these data sets shows up on the first page as the most viewed.
+
+3. Find the Topic Category for Human Health. Review the range of data sources 
+available for this topic. Why do you think these were tagged with the Human Health 
+category?
+There are datasets giving information about topics like Food Security, Live stock and Meat Data, Clean Air Status and Trends etc. Each and every one of these topics have strong correlation with human health.
+
+4. Go to the Food Price Outlook. Review the catalog page for this dataset. How can you 
+navigate to additional datasets from the USDA?
+The reference URL from usda.gov website takes you to the source page. You can find different datasets from USDA website.
+
+5. Go back to the data.gov home page. This time, click on Datasets by Organization.
+6. Try searching for your city, county, and state. What organizations are returned?
+I searched for Chicago and found "City of Chicago" datasets. There are 1091 datasets under.
+
+
+7. Search for USDA, and click into the result. Within the USDA datasets, search for food 
+composition. Notice that the top three results are all datasets concerning nutrition 
+information. Try searching the USDA page for nutrition. How does that affect your 
+results?
+a) One of the tricky things about working with data is that sometimes the terminology 
+used by a data source is not obvious. You may need to dig around and be creative 
+to find what you’re looking for.
+
+The search for food composition gave results related to nutrition information. To be more accurate, it seems like they were more about nutrition then food composition. This might be because of the keywords or tags used to classify dataset.
+
+8. Go back to the results for food composition, and click on FoodData Central. Review 
+the catalog page for this data source, then click on the button for Visit Page. Take 
+some time to explore the FoodData Central website.
+
+a) Try searching for butter, or any of your favorite foods. What kind of results do you 
+get? What happens when you click on a result?
+I searched for Bread. It divides the results in 5 main categories. It allows me the filet the results based on date, market, ingredients, brand owner. The website lets me preview the data on browser but there is no download button available in this page. I go to https://fdc.nal.usda.gov/download-datasets to download the data and it is unfiltered. I need to download the entire data and filter according to my need.
+
+b) Go back to the home page. Find Foundation Foods, and click on Downloads. What 
+kind of data can you find on this page? How big are these files? Where can you find
+more information on the data types available?
+I see downloadable files in this page for each Data type including Foundation Foods. It dates back to December 2025 for Foundation Foods. I can download it as .csv or .json. Also I can see the historical data below the page. I can also download these and cross reference the changes.
+
+9. When you are finished, make sure your changes to Ex3B_ExploringPublicData.txt are 
+saved. 
+Saved!
+10. Using Git Bash, commit and push your changes to the DataAnalytics repository. 
+Pushing...
