@@ -1,0 +1,54 @@
+1. Before doing any other investigation, list two or three questions that this infographic 
+and explanation of methodology raise in your mind
+	-Six states said they prefer milkshake but does it represent the population?
+	-Search data will show a correlation between food preferences in the area. How different it is from breakup/comfort foods?
+
+2. Where can you find Google Trends search data? Provide the URL.
+	https://trends.google.com/trends/
+	
+3a) What is the highest peak recorded in the line chart for “Interest over time”?
+	The highest peak recorded between Jan 31 - Feb 28 2025
+	
+3b) What is the lowest dip recorded?
+	The lowest is recorded Nov 30 - Dec 31 2024
+
+4. At the top next to the box for “Milkshake,” there is a plus sign to add another search 
+term. Click the plus sign to add a search for Hamburger (Food).
+	a) What is the highest peak recorded for searches using Hamburger? What is the 
+	lowest dip?
+	The Highest Apr 30 - May 31 2024
+	The lowest Nov 30 -Dec 31 2024
+	b) What happened to the line for Milkshake? What do the high and low look like now?
+	The Milkshake line is significantly under the Hamburger line which shows that search volume for milkshake is significantly lower then Hamburger search 	volume. This is making me question the results of break up food research.
+
+5. Why did the line for Milkshake change? Hint: Click on the icon next to “Interest 
+over time” for more information about how trend results are displayed
+	The line for Milkshake went down because its search volume compare to Hamburger is low.
+
+6. Add a third term to your search, this time for Breakup (Topic). 
+	a) Do you see any patterns that suggest a relationship between searches for Breakup 
+	and Hamburger? 
+	I don't see a strong correlation between Breakup and Hamburger search trends. 
+	
+	b) How about between Breakup and Milkshake
+	I don't see a strong correlation between Breakup and Hamburger search trends.
+
+7. What does all of this suggest about the reliability of the conclusions reached in the 
+article
+	I see a that they tried to create a correlation between breakup and these food search trends but these variable can be affected by many different 	reasons. I think that these variables are independent from each other and hard to find a correlation or causality in between.
+
+
+8. At the upper right of Google Trends, click on the link for “Back to Classic Explore.”
+Notice that this view includes a section for “Compared breakdown by subregion.”
+	a) What was the top state by interest for Milkshake?
+	The top state on Milkshake search trend is South Carolina
+	
+	b) What was the top state by interest for Hamburger?
+	The top state on Hamburger search trend is South Dakota
+ 
+10.a.What are the differences you notice between searching for between searching for a 
+term as a “search term” versus as a categorical term? What thoughts does this 
+raise in your mind about working with Google Trends data?
+
+	Search term and categorical term represent different results for Google. Search terms can include other searches related to term "milkshake" e.g 	milkshake maker, milkshake cup etc. But the categorical term directly represent the beverage as we now. It can include the searches with typos or 	searches like McDonalds milkshake. It focuses on the beverage and its search volume in any given time.
+	When I look at the trend lines between Milkshake(Beverage) and Milkshake(search term) I see that two trends are correlated. The search term peaked 	August 11-17 2024. The beverage showed a slight increase at the same dates but far away from its peak. Another example of that is the beverage 	started a positive trend after December 22, 2024 and did hit its peak Feb 2 2025 while the search term kept a straight trend line.
