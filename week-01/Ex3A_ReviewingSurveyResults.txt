@@ -1,0 +1,32 @@
+1. What conclusion can you reach about the responses to this question?
+-I can see that we are 25 students taking this class. One of the most noticeable information I can take away is most of us are living in Chicago and most of us graduated from highschool.
+
+2. Is the default summary or visualization helpful? How could it be improved?
+I had to clean the data in terms of formatting to see average values such as years of experience with excel. Also I cleaned the highest education column. So I could see averages for experience data. Also I created a pie chart to see our education data.
+
+3. For questions with an “Other” option, where can you find the actual text of those 
+responses? Do you notice anything that might be tricky about analyzing these?
+The tricky part in this data is matching the formatting of the answers before analyzing. For instance, height data is given both in imperial and metric. One unit should be picked and the other should be converted into the picked unit. Similar to birthdate data, date formatting should be organized. I don't see any answer as other in this data.
+
+4. For questions calling for a written response, what challenges do you notice about 
+finding trends or patterns in the answers provided?
+The written responses may not follow a pattern we can analyze right away. So, as a data analyst I should be able to clean and organize these data points to be able to analyze the all data.
+
+5. Now that you can see the responses, how might you recommend rephrasing this or 
+question or the response options in a future survey?
+A date formatting can be selected for birthdate data. If we can get the answers in a given format we wouldn't be dealing with cleaning and organizing these birthdates. Also, instead of getting a written answer for the amount of experience question, we can give options to select. This also would improve the clarity of our data.
+
+6. Is there anything that surprised you about the survey responses?
+The experience difference between classmates is surprisingly high. We have an outlier data of 16 years experience with excel. But,  our mode for this data is 0. 
+
+7. Looking at the responses to questions 1 and 5, are there any ideas you might try to 
+include in your morning routine, or any questions that you are also curious about?
+8. Pretend you are the instructor. Is there anything you can learn from this survey to help 
+in how you approach teaching this class?
+-Since there is a big experience gap between individuals it is challenging to find the right speed in classes in my opinion. I am not sure how we can find a pace that is beneficial for all. Maybe more experienced peers can help others to practice certain basics in breakout rooms.
+
+9. Again, pretend you are the instructor. Do you think it was helpful or not helpful to 
+make this survey anonymous? Why or why not? (If you can see both pros and cons, 
+you may include both.
+Firstly, the data is not 100% anonymous. We all shared our first and last names but the email address are anonymous. If some of us used others' name and birth data to fill this would make it complicated for sure. 
+If the data is anonymous I think this would make it less useful. Anonymous data would provide a general insight about the demographics of the class and overall experience level. But, non-anonymous data can tell us who is more experienced and who is at beginner level. So Instructor can ask certain questions to certain people based on their needs during class.
