@@ -1,0 +1,88 @@
+-- 1. Create a list of all transactions for your chosen [Category/Vendor] that took place in 
+-- the last quarter of 2014, sorted by the total sale amount from highest to lowest. 
+-- (Strength: Identifying high-volume peak periods).
+
+SELECT *
+FROM sales
+WHERE date BETWEEN '2014-10-01' AND '2014-12-31'
+	AND vendor ILIKE '%bacardi%'
+	ORDER BY total DESC
+
+-- 2. Which transactions for your [Category/Vendor] had a bottle quantity greater than 12? 
+-- Display the date, store number, item description, and total amount. 
+-- (Strength: Identifying bulk buyers or wholesale-style transactions).
+
+SELECT date, store, description, total
+FROM sales
+WHERE bottle_qty > 12
+	AND vendor ILIKE '%bacardi%'
+	ORDER BY 3 DESC
+
+-- 3. Find all products in the products_table whose item_description contains a specific 
+-- keyword (e.g., 'Limited', 'Spiced'). What categories do they belong to? 
+-- (Opportunity: Identifying niche product variants).
+
+
+SELECT category_name , item_description , vendor_name
+FROM products
+WHERE (item_description ILIKE '%limited%' 
+	OR
+	item_description ILIKE '%spiced%'
+	OR
+	item_description ILIKE '%reserve%'
+	OR
+	item_description ILIKE '%rare%'
+	OR
+	item_description ILIKE '%exclusive%'
+	OR
+	item_description ILIKE '%special%')
+	AND
+	vendor_name ILIKE '%bacardi%'
+	ORDER BY 1
+
+
+-- 4. What is the total sales revenue and the average bottle price (btl_price) for 
+-- your chosen [Category/Vendor]? 
+-- (Strength/Baseline: Establishing the financial footprint).
+
+SELECT 'Bacardi' AS Vendor_Name , 
+SUM(total):: money AS Total_Revenue ,
+ROUND(AVG(btl_price::numeric) , 2) AS Avg_Bottle_Price
+FROM sales
+WHERE vendor ILIKE '%bacardi%'
+
+-- 5. How many transactions were recorded for each specific item description within your 
+-- chosen [Category]? Which specific product is the most frequently purchased? 
+-- (Strength: Identifying your "hero" product).
+
+SELECT description AS item_name , COUNT(item) AS transaction_count
+FROM sales
+WHERE vendor ILIKE '%bacardi%'
+GROUP BY description
+ORDER BY COUNT(item) DESC
+
+
+-- 6. Which store generated the highest total revenue for your [Category/Vendor]? 
+-- Which generated the lowest (but still greater than zero)? 
+-- (Strength vs. Weakness: Identifying your best and worst retail partners).
+
+--Use this to find the store with highest revenue:
+SELECT st.name , SUM(s.total)::money
+FROM sales AS s
+JOIN stores AS st ON st.store=s.store
+WHERE s.vendor ILIKE '%bacardi%'
+GROUP BY 1
+ORDER BY SUM(s.total) DESC
+LIMIT 1
+
+--Use this to find the store with lowest revenue:
+SELECT st.name , SUM(s.total)::money
+FROM sales AS s
+JOIN stores AS st ON st.store=s.store
+WHERE s.vendor ILIKE '%bacardi%' 
+	AND 2 > 0
+GROUP BY 1
+ORDER BY SUM(s.total) ASC
+LIMIT 1
+
+	  
