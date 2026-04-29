@@ -17,6 +17,16 @@ FROM sales
 WHERE bottle_qty > 12
 	AND vendor ILIKE '%bacardi%'
 	ORDER BY 3 DESC
+-- I adjusted the query above for my analysis as below to detect key partners with high volume
+SELECT s.date, s.store, s.description, SUM(s.total), st.name
+FROM sales AS s
+JOIN stores AS st ON s.store=st.store
+WHERE bottle_qty > 12
+	AND vendor ILIKE '%bacardi%'
+	GROUP BY 1,2,3,5
+	ORDER BY 4 DESC
+ 
+
 
 -- 3. Find all products in the products_table whose item_description contains a specific 
 -- keyword (e.g., 'Limited', 'Spiced'). What categories do they belong to? 
@@ -312,3 +322,26 @@ GROUP BY 1,2
 HAVING SUM(total) > AVG(avg_revenue)
 ORDER BY 3 DESC
 
+-- 19. Find the top 5 highest-grossing items for your [Vendor], then use a subquery 
+-- to look up their full details (like case_cost and proof) from the products_table. 
+-- (Strength: Deep-dive into the specs of your most profitable inventory).
+
+SELECT item_description, bottle_size, pack, 
+       proof, bottle_price, case_cost, revenue_by_product::money 
+FROM (SELECT p.item_description,
+			p.bottle_size,
+			p.pack,
+			p.proof,
+			p.bottle_price,
+			p.case_cost,
+			SUM(s.total) AS revenue_by_product
+			FROM products AS p
+			JOIN sales AS s ON s.item=p.item_no
+					WHERE vendor_name ILIKE '%bacardi%'
+					GROUP BY 1,2,3,4,5,6
+					) AS detail_table
+					
+ORDER BY 7 DESC
+LIMIT 20
+
+-- I used limit 20. Due to bottle sizes same item names may repeat.
