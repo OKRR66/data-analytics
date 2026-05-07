@@ -1,7 +1,7 @@
 # show_major
 #Create a script named show_major.py that defines two variables for a student: student_name and student_major. 
 student_name = "Onur"
-student_major = "HIST"
+student_major = "asdfadsf"
 # The student_major variable will contain a code for the student’s major (e.g. ENG).
 
 #Use the following table to create lookup logic to display the name of the major and location of the department’s office based on the major code:
