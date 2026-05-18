@@ -80,7 +80,7 @@ restaurant3.add_num_served()
 restaurant3.print_num_served() """
 #b) For each of your example restaurants, run customer_rating() several times, inputting a 
 # different rating each time. Confirm that the average rating updates appropriately each time.
-restaurant1.customer_ratings()
+restaurant1.customer_ratings() # I noticed that average is not updating if i don't run it multiple times before this question. I added my notes regarding this situation above.
 restaurant1.customer_ratings()
 restaurant1.customer_ratings()
 
@@ -93,3 +93,5 @@ restaurant3.customer_ratings()
 restaurant3.customer_ratings()
 #c) For customer_rating(), try inputting a few “incorrect” values, like the number 6, 
 # a decimal number such as 2.5, and a word/phrase such as “5 stars!”. Does your
+
+restaurant1.customer_ratings() 
